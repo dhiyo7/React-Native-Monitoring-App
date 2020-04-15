@@ -4,7 +4,7 @@ import Navigation from './src/screen/Navigation'
 export default class Main extends Component {
   render() {
     return (
-     <Navigation/>
+     <Navigation />
     )
   }
 }

@@ -1,50 +1,24 @@
 import React, {Component} from 'react';
-import {
-  Container,
-  Header,
-  Content,
-  Card,
-  CardItem,
-  Text,
-  Body,
-  Right,
-  Left,
-  Button,
-  Icon,
-} from 'native-base';
+import {StyleSheet} from 'react-native'
+import {Container, Content, Card, CardItem, Body} from 'native-base';
 import Progress from './child/Progress';
+import HeaderCustom from './child/Header';
+import Sensor from './child/Sensor';
 export default class CardItemBordered extends Component {
   render() {
     return (
-      <Content padder>
-        <Card>
-          <CardItem header bordered>
-            <Text>Grafik Sensor</Text>
-          </CardItem>
-          <CardItem>
-            <Body>
-              <Left/>
-              <Progress/>
-              <Right/>
-              <Left/>
+      <Container >
+        <HeaderCustom style={{flex:1}}  />
+        <Content padder>
+          <Card style={{marginTop:170, boderRadius: 17}}>
+            <CardItem bordered>
               <Body>
-              <Text>Sensor A</Text>
+                <Sensor/>
               </Body>
-              <Right/>
-            </Body>
-            <Body>
-              <Left/>
-              <Progress/>
-              <Right/>
-              <Left/>
-              <Body>
-              <Text>Sensor A</Text>
-              </Body>
-              <Right/>
-            </Body>
-          </CardItem>
-        </Card>
-      </Content>
+            </CardItem>
+          </Card>
+        </Content>
+      </Container>
     );
   }
 }

@@ -12,10 +12,13 @@ class Progress extends Component {
           size={120}
           width={15}
           fill={56}
-          tintColor="#00e0ff"
+          tintColor="#0be881"
           onAnimationComplete={() => console.log('onAnimationComplete')}
-          backgroundColor="#3d5875"
+          backgroundColor="#B9CCBD"
         />
+        <Text>
+          Kelembaban
+        </Text>
       </View>
     );
   }
